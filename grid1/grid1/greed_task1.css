@@ -1,0 +1,468 @@
+@font-face {
+    font-family: face;
+    src: url(./font/Inter-Italic-VariableFont_opsz\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: face;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: grid;
+    padding: 9px;
+    gap:10px;
+    grid-template-columns: 23% 25% 25% 23%;
+   grid-template-rows: 33% 19% 20% 23%;
+    grid-template-areas:
+        "top-right top-center1 top-center2 top-left"
+        "top-right center center top-left"
+        "bottom-top center center bottom-left"
+        "bottom-center bottom-center bottom-right  bottom-left"
+    ;
+    
+}
+.top-right{
+    background-color: aqua;
+    grid-area: top-right;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+  
+}
+.top-center1{
+    background: linear-gradient(rgb(248, 248, 16),rgba(233, 233, 10, 0.747));
+    grid-area: top-center1;
+      border-radius: 25px;
+      padding: 20px;
+}
+.top-center2{
+    background-color: white;
+    grid-area: top-center2;
+      border-radius: 25px;
+      color: black;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+}
+.top-left{
+    background-color: white;
+    grid-area: top-left;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+   gap: 5px;
+}
+.center{
+    background-color: rgb(238, 223, 226);
+    grid-area: center;
+      border-radius: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+.bottom-top{
+    background-color: white;
+    padding: 15px;
+    grid-area: bottom-top;
+      border-radius: 25px;
+}
+.bottom-right{
+    background-color: chartreuse;
+    grid-area: bottom-right;
+      border-radius: 25px;
+      position: relative;
+}
+.bottom-center{
+    background-color:pink;
+    grid-area: bottom-center;
+      border-radius: 25px;
+      overflow: hidden;
+}
+
+.bottom-left{
+    overflow: hidden;
+    grid-area: bottom-left;
+    border-radius: 25px; 
+}
+.top-right .img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-right .gola{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.top-right .parent{
+    margin-left: 10px;
+}
+
+.top-right .parent .child1{
+    width: 120px;
+    height: 80px;
+    background-color:  #1413139c;
+    
+    position: absolute;
+    bottom: 7px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 5px;
+    color: white;
+}
+
+
+.top-right .parent .child2{
+    width: 150px;
+    height: 80px;
+    background-color:  #1413139c;
+    position: absolute;
+    bottom: 7px;
+    left:150px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    gap: 8px;
+    color: white;
+}
+.top-right .parent .child1 .img1{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.top-right .parent .child2 .img2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.min{
+    font-size: 15px;
+}
+
+.h3{
+    line-height: 20px;
+}
+.top-center1 .line-parent{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: 15px;
+}
+.top-center1 .line-parent .line{
+    width: 3px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.74);
+  position: relative;
+  top: 30px;
+   border-radius: 10px;
+ 
+}
+.top-center1 .line-parent .line1{
+    width: 3px;
+    height: 45px;
+    background-color: rgba(0, 0, 0, 0.74);
+     position: relative;
+  top: 22px;
+}
+.top-center1 .line-parent .line2{
+    width: 3px;
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.74);
+     position: relative;
+  top: 16px;
+   border-radius: 10px;
+}
+.top-center1 .line-parent .line3{
+    width: 4px;
+    height: 65px;
+    background-color: rgba(0, 0, 0, 0.897);
+     position: relative;
+  top: 10px;
+  border-radius: 10px;
+
+}
+.top-center1 .line-parent .line4{
+    width: 4px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.925);
+     position: relative;
+  top: 4px;
+  border-radius: 10px;
+}
+.top-center1 .line-parent .line5{
+    width: 5px;
+    height: 80px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.use{
+    line-height: 23px;
+    position: relative;
+    bottom: 9px;
+}
+.top-center1 .store{
+    display: flex;
+    gap: 10px;
+}
+.top-center1 .store .apple{
+    width: 145px;
+    height: 50px;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: white;
+}
+
+.top-center1 .store .playstore{
+    width: 145px;
+    height: 50px;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    width: 145px;
+    height: 50px;
+    background-color: #a52a2a;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    color: white;
+}
+.fill{
+    font-size: 32px;
+}
+.download{
+    line-height: 17px;
+}
+.app{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.app1{
+    font-size: 17px;
+    font-weight: 600;
+}
+.top-center2 .font{
+    line-height: 27px;
+}
+.top-center2 .font .head_font{
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.top-center2 .font .bp{
+    font-size: 24px;
+}
+.top-center2 .rang_div{
+    width: 270px;
+    height: 14px;
+    border: 1px solid  gray;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    display: flex;
+}
+.top-center2 .rang_div .rang1{
+    width: 73px;
+    height: 100%;
+    background-color: blue;
+    border-radius: 20px;
+}
+.top-center2 .rang_div .rang2{
+    width: 73px;
+    height: 100%;
+    background-color: yellow;
+    border-radius: 20px;
+    margin-left: -9px;
+}
+.top-center2 .rang_div .rang3{
+    width: 75px;
+    height: 100%;
+    background-color: green;
+    border-radius: 20px;
+    margin-left: -9px;
+}
+.top-center2 .rang_div .rang4{
+    width: 75px;
+    height: 100%;
+    background-color: slategrey;
+    border-radius: 20px;
+    margin-left: -9px;
+}
+.top-left .top-rang{
+    width: 20px;
+    height: 24px;
+    background-color: #a52a2a;
+}
+.top-left .top-rang1{
+    width: 20px;
+    height: 24px;
+    background-color: green;
+}
+.left_flex{
+    display: flex;
+    gap: 2px;
+    position: relative;
+    top: 25px;
+    left: 20px;
+    align-items: center;
+}
+.for{
+    font-size: 14px;
+    padding-left: 15px;
+}
+.top-left .div_left .own_left{
+    line-height: 40px;
+    padding-left: 20px;
+    padding-top: 35px;
+    font-weight: 700;
+    font-size: 37px;
+}
+.top-left .pink_left{
+    width: 250px;
+    height: 120px;
+    background:linear-gradient(rgba(255, 192, 203, 0.801),rgba(255, 192, 203, 0.514));
+    position: relative;
+    left: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.map{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.line_pink{
+    font-size: 30px;
+}
+.brook{
+    line-height: 20px;
+}
+.center .center_img{
+   width: 900px;
+    object-fit: cover;
+}
+.limets{
+    line-height: 25px;
+}
+.img_flex_one{
+    display: flex;
+    gap: 10px;
+  
+   justify-content: center;
+   align-items: center;
+    line-height: 20px;
+}
+.lobo_flex{
+    width: 100px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.bottom-left .bottom_left_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.bottom_img_right{
+    width: 100%;
+    height: 150px;
+    position: relative;
+     object-fit: cover;
+     border-radius: 20px;
+}
+.girl_jp{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    position: absolute;
+ 
+    left: 40px;
+}
+.last_div{
+    width: 250px;
+    height: 145px;
+    
+    border-radius: 20px;
+    margin-left:10px;
+}
+.last_div_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.best{
+    color: black;
+    position: absolute;
+    top: 500px;
+    font-size: 18px;
+    left: 330px;
+   line-height: 25px;
+}
+.last_divv{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+   left: 330px;
+    position: absolute;
+    top: 580px;
+}
+.last_divv1{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+   left: 360px;
+    position: absolute;
+    top: 580px;
+}
+.last_divv2{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+   left: 390px;
+    position: absolute;
+    top: 580px;
+}
+.yop_image{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 20px;
+    object-fit: cover;
+  
+}
